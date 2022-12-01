@@ -9,9 +9,8 @@ RUN apt -y update && \
     apt -y install git python3 build-essential python3-pil python3-dev python3-numpy wget && \
     mkdir -p ~/.minecraft/versions/1.19/ && \
     wget https://overviewer.org/textures/1.19 -O ~/.minecraft/versions/1.19/1.19.jar && \
-    git clone https://github.com/greatmastermario/Minecraft-Overviewer.git && \
+    git clone https://github.com/overviewer/Minecraft-Overviewer.git && \
     cd Minecraft-Overviewer/ && \
-    git checkout bugfix/2003_1.18_Increased_Height && \
     python3 setup.py build && \
     python3 setup.py install && \
     cd ..
