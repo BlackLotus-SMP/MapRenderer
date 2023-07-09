@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-ENV VERSION 1.19
+ENV VERSION 1.20
 
 RUN apt -y update && \
     apt -y upgrade && \
